@@ -10,7 +10,7 @@
     diffFilter = delta --color-only --features=interactive
 
 [delta]
-    features = decorations
+    features = side-by-side defaults unobtrusive-line-numbers decorations
 
 [delta "interactive"]
     keep-plus-minus-markers = false
