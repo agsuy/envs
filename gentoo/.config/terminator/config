@@ -1,0 +1,38 @@
+[global_config]
+  tab_position = Bottom
+  close_button_on_tab = False
+  suppress_multiple_term_dialog = True
+[keybindings]
+  split_horiz = <Primary>underscore
+  split_vert = <Primary>bar
+  new_window = <Ctrl><Shift>n
+  new_terminator = <Super><Shift>n
+[profiles]
+  [[default]]
+    background_darkness = 0.65
+    background_type = transparent
+    scrollbar_position = hidden
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child0]]]
+      type = Terminal
+      parent = window0
+      profile = default
+      title = TMUX
+      command = tmux
+    [[[window1]]]
+      type = Window
+      parent = ""
+      position = 481
+    [[[child1]]]
+      type = Terminal
+      parent = window1
+      profile = default
+      position = 481
+      command = nvim
+      title = NVIM
+[plugins]
