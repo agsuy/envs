@@ -23,7 +23,7 @@
       parent = window0
       profile = default
       title = TMUX
-      command = tmux
+      command = tmux new -s main
     [[[window1]]]
       type = Window
       parent = ""

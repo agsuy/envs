@@ -1,0 +1,4 @@
+# Select a docker container to remove
+function drm() {
+  docker ps -a | sed 1d | fzf -q "$1" --no-sort -m --tac | awk '{ printf "%s%s", (NR==1? "" : " "), $1} END{ print "" }' | xargs -l docker rm 
+}
