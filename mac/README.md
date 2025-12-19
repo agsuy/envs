@@ -10,7 +10,7 @@ homebrew
 TODO: script for this
 
 ls replacement:
-https://the.exa.website/
+https://github.com/eza-community/eza
 
 grep replacement:
 https://github.com/BurntSushi/ripgrep
